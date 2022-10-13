@@ -133,9 +133,10 @@ abstract class ThemeContainer154 : ContainerControl
 
         if (_StartPosition == FormStartPosition.CenterParent || _StartPosition == FormStartPosition.CenterScreen)
         {
-            Rectangle SB = Screen.PrimaryScreen.Bounds;
-            Rectangle CB = ParentForm.Bounds;
-            ParentForm.Location = new Point(SB.Width / 2 - CB.Width / 2, SB.Height / 2 - CB.Width / 2);
+            int x = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
+            int y = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
+
+            ParentForm.Location = new Point(x, y);
         }
 
         HasShown = true;
