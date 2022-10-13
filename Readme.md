@@ -55,6 +55,13 @@
 
 ----------------------------------------------------------------
 
+## Ghost Theme
+
+![Alt text](/GhostThemeExample.png?raw=true "Ghost Theme")
+
+
+----------------------------------------------------------------
+
 # Base files:
 ```csharp
 + Theme Base 1.5.2
